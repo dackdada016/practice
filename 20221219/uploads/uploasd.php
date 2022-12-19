@@ -16,8 +16,6 @@ if(! empty($_FILES['avatar']) and is_string($_FILES['avatar']['name'])){
   }
 
 }
-
-
 echo json_encode([
   'success' => $success,
   'error' => $error,
