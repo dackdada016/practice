@@ -11,7 +11,7 @@ require './parts/connect_db.php';
     <div class="col-lg-4">
       <div class="card">
         <input type="hidden" id="avatar_val" value="<?= $_SESSION['admin']['avatar'] ?>">
-
+    
         <img id="myimg" src="../20221219/uploads/<?= empty($_SESSION['admin']['avatar']) ? '_default.png' : $_SESSION['admin']['avatar'] ?>" class="card-img-top" alt="...">
         <div class="card-body">
 
@@ -37,7 +37,7 @@ require './parts/connect_db.php';
 
       f.onchange = async ()=>{
         const fd = new FormData(document.form1);
-        const r = await fetch('./../practice/upload-single-img.php', {
+        const r = await fetch('', {
           method: 'POST',
           body: fd
         });
@@ -45,7 +45,7 @@ require './parts/connect_db.php';
         console.log({data});
         if(data.success){
           // 成功上傳
-          myimg.src = './../uploads/' + data.filename;
+          myimg.src = '../20221219/upload-single-img.php' + data.filename;
           avatar_val.value = data.filename
 
         } else {
