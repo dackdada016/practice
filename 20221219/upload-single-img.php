@@ -16,7 +16,7 @@ $extMap = [
   'image/png' => '.png',
 ];
 
-$path = __DIR__. '/../uploads/';
+$path = __DIR__. './uploads/';
 
 if(! empty($_FILES['avatar'])){
   $f = $_FILES['avatar'];
