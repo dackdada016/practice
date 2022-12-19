@@ -10,7 +10,7 @@ require './parts/connect_db.php';
   <div class="row">
     <div class="col-lg-4">
       <div class="card">
-        <img src="./../uploads/<?= empty($_SESSION['admin']['avatar']) ? '_default.png' : $_SESSION['admin']['avatar'] ?>" class="card-img-top" alt="...">
+        <img src="../20221219/uploads/<?= empty($_SESSION['admin']['avatar']) ? '_default.png' : $_SESSION['admin']['avatar'] ?>" class="card-img-top" alt="...">
         <div class="card-body">
 
           <button class="btn btn-primary">上傳</button>
