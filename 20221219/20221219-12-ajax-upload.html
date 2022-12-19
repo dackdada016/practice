@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,12 +26,14 @@
         const data = await r.json();
         console.log({data});
         if(data.success){
-            myimg.src = 'http://localhost/my-proj/practice/20221219/uploads/' + data.filename;
+          // 成功上傳
+          myimg.src = 'http://localhost/mfee30-php/uploads/' + data.filename;
         } else {
           alert(data.error || '沒有上傳的檔案');
         }
-    };
+      };
 
-  </script>
-</body>
+  
+    </script>
+  </body>
 </html>
