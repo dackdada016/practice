@@ -12,7 +12,7 @@ require './parts/connect_db.php';
       <div class="card">
         <input type="hidden" id="avatar_val" value="<?= $_SESSION['admin']['avatar'] ?>">
 
-        <img id="myimg" src="./../uploads/<?= empty($_SESSION['admin']['avatar']) ? '_default.png' : $_SESSION['admin']['avatar'] ?>" class="card-img-top" alt="...">
+        <img id="myimg" src="../20221219/uploads/ empty($_SESSION['admin']['avatar']) ? '_default.png' : $_SESSION['admin']['avatar'] ?>" class="card-img-top" alt="...">
         <div class="card-body">
 
           <button class="btn btn-primary" onclick="f.click()">上傳</button>
