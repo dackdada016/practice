@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person {
+            gender = 'male';
+            // 建構函式(形式參數)
+            constructor(name='noname',age='18'){
+                //把區域變數的值，存放到屬性裡面
+                this.name = name; 
+                this.age = age;
+            }
+
+            toJSON(){
+                const {name, age, gender} = this;
+                return {name, age, gender};
+            }
+            toString(){
+                return JSON.stringify(this);
+            }
+        }
+        const p1 = new Person('David',26,'male')
+        // console.log(p1.name,p1.age);
+        // console.log(p1.toJSON());
+        // const p2 = new Person();
+        // console.log(p2.name,p2.age);
+    </script>
+</body>
+</html>
